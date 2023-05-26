@@ -1,4 +1,4 @@
-# 0x15. Files manager
+# 0x04. Files manager
 :open_file_folder: Specializations - Web Stack programming ― Back-end  
 :bust_in_silhouette: by Guillaume, CTO at Holberton School  
 :copyright: **[Holberton School](https://www.holbertonschool.com/)**  
@@ -51,6 +51,3 @@ The objective is to build a simple platform to upload and view files:
 * [ ] 9. Image Thumbnails
 * [ ] 10. Tests!
 * [ ] 11. New user - welcome email
-
-## Software engineer
-[Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
