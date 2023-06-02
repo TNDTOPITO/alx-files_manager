@@ -1,20 +1,22 @@
 import express from 'express';
 import AppController from '../controllers/AppController';
 import UsersController from '../controllers/UsersController';
+import AuthController from '../controllers/AuthController';
+import FilesController from '../controllers/FilesController';
 
-export default function Routes(app) {
-  const router = express.Router();
-  app.use('/', router);
+const router = express.Router();
 
-  router.get('/status', (req, res) => {
-    AppController.getStatus(req, res);
-  });
+// the get Routes
+router.get('/status', AppController.getStatus);
+router.get('/stats', AppController.getStats);
+router.get('/connect', AuthController.getConnect);
+router.get('/disconnect', AuthController.getDisconnect);
+router.get('/users/me', UsersController.getMe);
+router.get('/files/:id', FilesController.getShow);
+router.get('/files', FilesController.getIndex);
 
-  router.get('/stats', (req, res) => {
-    AppController.getStats(req, res);
-  });
+// the post Routes
+router.post('/users', UsersController.postNew);
+router.post('/files', FilesController.postUpload);
 
-  router.post('/users', (req, res) => {
-    UsersController.postNew(req, res);
-  });
-}
+module.exports = router;

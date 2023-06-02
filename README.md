@@ -42,12 +42,12 @@ The objective is to build a simple platform to upload and view files:
 * [x] 0. Redis utils
 * [x] 1. MongoDB utils
 * [x] 2. First API
-* [ ] 3. Create a new user
-* [ ] 4. Authenticate a user
-* [ ] 5. First file
+* [x] 3. Create a new user
+* [x] 4. Authenticate a user
+* [x] 5. First file
 * [ ] 6. Get and list file
-* [ ] 7. File publish/unpublish
-* [ ] 8. File data
-* [ ] 9. Image Thumbnails
-* [ ] 10. Tests!
-* [ ] 11. New user - welcome email
+* [x] 7. File publish/unpublish
+* [x] 8. File data
+* [x] 9. Image Thumbnails
+* [x] 10. Tests!
+* [x] 11. New user - welcome email
